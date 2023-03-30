@@ -60,10 +60,3 @@ Links:
 * [Creating Custom Doctrine ORM Filters documentation](https://api-platform.com/docs/core/filters/#creating-custom-doctrine-orm-filters)
 * [Code in api/src/Filter](api/src/Filter)
 
-## Contributing
-
-[Read the contributing guide](.github/CONTRIBUTING.md)
-
-## Credits
-
-Created by [Kévin Dunglas](https://dunglas.fr). Commercial support available at [Les-Tilleuls.coop](https://les-tilleuls.coop).
