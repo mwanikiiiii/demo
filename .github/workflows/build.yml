@@ -67,7 +67,7 @@ jobs:
             type=raw,value=${{ github.sha }},priority=9999
             ${{ inputs.tags }}
       - name: Build and push
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./api
           target: app_php
@@ -118,7 +118,7 @@ jobs:
             type=raw,value=${{ github.sha }},priority=9999
             ${{ inputs.tags }}
       - name: Build and push
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./api
           target: app_caddy
@@ -169,7 +169,7 @@ jobs:
             type=raw,value=${{ github.sha }},priority=9999
             ${{ inputs.tags }}
       - name: Build and push
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./pwa
           target: prod
