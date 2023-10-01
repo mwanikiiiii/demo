@@ -5,7 +5,7 @@ on:
     inputs:
       tags:
         type: string
-        description: The Docker Tags (see docker/metadata-action@v4 for available values)
+        description: The Docker Tags (see docker/metadata-action@v5 for available values)
         required: true
       push:
         default: true
@@ -60,7 +60,7 @@ jobs:
           gcloud container clusters get-credentials ${{ inputs.gke-cluster }} --zone ${{ inputs.gke-zone }}
       - name: Docker metadata
         id: docker-metadata
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: eu.gcr.io/${{ secrets.gke-project }}/php
           tags: |
@@ -111,7 +111,7 @@ jobs:
           gcloud container clusters get-credentials ${{ inputs.gke-cluster }} --zone ${{ inputs.gke-zone }}
       - name: Docker metadata
         id: docker-metadata
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: eu.gcr.io/${{ secrets.gke-project }}/caddy
           tags: |
@@ -162,7 +162,7 @@ jobs:
           gcloud container clusters get-credentials ${{ inputs.gke-cluster }} --zone ${{ inputs.gke-zone }}
       - name: Docker metadata
         id: docker-metadata
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: eu.gcr.io/${{ secrets.gke-project }}/pwa
           tags: |
